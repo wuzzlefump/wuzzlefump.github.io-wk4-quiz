@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- the head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<!-- the body -->
+<body>
+<!-- nav -->
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-md-6" style="display: flex; justify-self: start;">
+        <button id = "done" class="heading">Highscores</button> 
+        <button id = "home"> Home </button>
+      </div>
+
+      <div class="col-md-6" style="display: flex; justify-content: end;">
+        
+        <h2 class="time"></h2>
+
+      </div>
+
+
+  </div>
+<!-- start screen -->
+    <div class="row screen1">
+        <div class = "col-md-12">
+
+        <h1>Code Questions Quiz</h1>
+
+        <button class="startbtn"></button>
+
+        </div>
+    </div>
+
+<!-- questions screen -->
+
+    <div class ="row screen2">
+        <div class="col-md-4">
+
+            <div class="row">
+                <h1 class="qhead"></h1>
+            </div>
+
+            <div class="row">
+                <button class= "btnone" ></button>
+            </div>
+
+            <div class="row">
+                <button class= "btntwo" ></button>
+            </div>
+
+            <div class="row">
+                <button class= "btnthree" ></button>
+            </div>
+
+            <div class="row">
+                <button class= "btnfour" ></button>
+            </div>
+
+
+
+        </div>
+
+        <div class="col-md-4">
+
+            <p class = counter></p>
+
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+    
+    </div>
+
+<!-- Record highscore screen -->
+    <div class=" screen3">
+        <div class="row">
+            <div class="highscores">
+                <div class="scores">
+                    <h1>Scores</h1>
+                    <form id="score-form" method="POST">
+                      <label for="score-text">Add your initials:</label>
+                      <input type="text" placeholder="add your initals" name="score-text" id="score-text" />
+                    </form>
+                    <p># of scores: <span id="scores-count">0</span></p>
+                    <ul id="score-list"></ul>
+                  </div>
+              
+                 
+                </div>
+
+         </div>
+    </div>
+    
+       
+
+             
+</div>
+
+
+<!-- link to js -->
+
+<script src="script.js"></script> 
+
+</body>
+
+
+
+
+
+</html>
